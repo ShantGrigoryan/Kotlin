@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity"
+    android:background="@color/bacground_default_color">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <View
+            android:layout_width="234dp"
+            android:layout_height="226dp"
+            android:background="@drawable/semi_circle"
+            tools:ignore="MissingConstraints" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:orientation="vertical"
+        tools:ignore="MissingConstraints">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:src="@drawable/img_page1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginTop="22dp"
+        android:orientation="vertical">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="Get things done with TODO"
+            android:textSize="14dp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="59dp"
+        android:layout_marginTop="22dp"
+        android:layout_marginRight="56dp">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Hello dear friend! To use the application, press ''Get Started''"
+            android:textAlignment="center"
+            android:textSize="12dp"/>
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/GetStarted_btn"
+        android:layout_width="match_parent"
+        android:layout_height="49dp"
+        android:layout_marginTop="45dp"
+        android:layout_marginRight="36dp"
+        android:layout_marginLeft="34dp"
+        android:background="@drawable/rectangle_shape"
+        android:focusable="true"
+        >
+<TextView
+    android:id="@+id/text_getStarted_click"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:text="Get Started"
+    android:textColor="@color/white"
+    android:clickable="true"
+    android:focusable="true"
+    />
+    </LinearLayout>
+
+</LinearLayout>
