@@ -1,5 +1,6 @@
 package com.example.todolist
 
+import android.content.Intent
 import android.os.Bundle
 import android.widget.TextView
 import android.widget.Toast
@@ -19,14 +20,14 @@ class RegistrationPage : AppCompatActivity() {
             insets
         }
     val sign_in: TextView = findViewById(R.id.sign_in_txt)
-    val register: TextView = findViewById(R.id.Register_txt)
-        sign_in.setOnClickListener {
-            Toast.makeText(this@RegistrationPage , "Sign in clicked",
-                Toast.LENGTH_LONG).show()
-        }
+    val register:TextView = findViewById(R.id.Register_txt)
         register.setOnClickListener {
             Toast.makeText(this@RegistrationPage , "Register clicked",
                 Toast.LENGTH_LONG).show()
+        }
+        sign_in.setOnClickListener {
+            val intent = Intent(this , sign_in::class.java)
+            startActivity(intent)
         }
     }
 }
