@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layer-list
+    xmlns:android="http://schemas.android.com/apk/res/android">
+    <item>
+        <shape android:shape="oval">
+            <solid android:color="@color/white" android:x = "-2dp" android:y = "-73dp"
+                />
+            <solid android:color="@color/white" android:x = "-73dp" android:y = "8dp"
+                />
+        </shape>
+    </item>
+
+</layer-list>
