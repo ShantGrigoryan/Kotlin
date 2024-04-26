@@ -115,7 +115,6 @@
                 android:background="@android:color/transparent"
                 android:hint="Enter your password"
                 android:nestedScrollingEnabled="false"
-                android:password="true"
                 android:singleLine="false" />
         </LinearLayout>
         <LinearLayout
@@ -134,7 +133,6 @@
                 android:id="@+id/Confirm_Password"
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:password="true"
                 android:background="@android:color/transparent"
                 android:hint="Confirm your password"
                 android:nestedScrollingEnabled="false"
