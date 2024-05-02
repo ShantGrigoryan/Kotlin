@@ -3,10 +3,10 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:id="@+id/main"
-    android:orientation="vertical"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@color/bacground_default_color"
+    android:orientation="vertical"
     tools:context=".SignInPage">
 
     <androidx.constraintlayout.widget.ConstraintLayout
@@ -35,24 +35,26 @@
             tools:ignore="MissingConstraints" />
 
     </androidx.constraintlayout.widget.ConstraintLayout>
-<LinearLayout
-    android:layout_width="wrap_content"
-    android:layout_height="wrap_content"
-    android:layout_gravity="center"
-    android:layout_marginTop="48dp"
-    >
-    <ImageView
+
+    <LinearLayout
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/img_login_page"/>
-</LinearLayout>
+        android:layout_gravity="center"
+        android:layout_marginTop="48dp">
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/img_login_page" />
+    </LinearLayout>
+
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
         android:orientation="vertical"
         tools:layout_editor_absoluteX="16dp"
-        tools:layout_editor_absoluteY="381dp"
-        android:layout_marginTop="25dp">
+        tools:layout_editor_absoluteY="381dp">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -97,16 +99,16 @@
                 android:nestedScrollingEnabled="false"
                 android:singleLine="false" />
         </LinearLayout>
+
         <LinearLayout
             android:id="@+id/Register_btn"
             android:layout_width="match_parent"
             android:layout_height="49dp"
-            android:background="@drawable/rectangle_shape"
-            android:layout_marginTop="62dp"
             android:layout_marginLeft="34dp"
+            android:layout_marginTop="62dp"
             android:layout_marginRight="36dp"
-            android:clickable="true"
-            >
+            android:background="@drawable/rectangle_shape"
+            android:clickable="true">
 
             <TextView
                 android:id="@+id/Login_txt"
@@ -119,27 +121,29 @@
                 android:textSize="12dp"
                 android:textStyle="bold" />
         </LinearLayout>
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="match_parent"
-            android:orientation="horizontal"
             android:layout_gravity="center"
             android:layout_marginTop="18dp"
             android:gravity="center"
-            >
+            android:orientation="horizontal">
+
             <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="@color/black"
+                android:text="Already have an account? "
 
-                android:text="Already have an account? "/>
+                android:textColor="@color/black" />
+
             <TextView
                 android:id="@+id/sign_in_txt"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:clickable="true"
-                android:textColor="#32819A"
-                android:text="sign up"/>
+                android:text="sign up"
+                android:textColor="#32819A" />
         </LinearLayout>
     </LinearLayout>
 </LinearLayout>

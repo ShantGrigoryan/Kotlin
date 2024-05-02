@@ -1,6 +1,7 @@
 package com.example.todolist
 
 
+import SignInPage
 import android.content.Intent
 import android.os.Bundle
 import android.widget.EditText
@@ -10,8 +11,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.todolist.API.RetrofitClient
 import com.example.todolist.DataModel.DataModel
+import com.example.todolist.Register.API.RetrofitClient
 
 @Suppress("UNREACHABLE_CODE")
 class RegistrationPage : AppCompatActivity() {
@@ -105,6 +106,7 @@ class RegistrationPage : AppCompatActivity() {
         sign_in.setOnClickListener {
             val intent = Intent(this, SignInPage::class.java)
             startActivity(intent)
+
         }
     }
 }

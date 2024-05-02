@@ -22,7 +22,7 @@ class UserPage : AppCompatActivity() {
     private lateinit var minuteHand: ImageView
     private lateinit var secondHand: ImageView
 
-    @SuppressLint("Range")
+    @SuppressLint("Range", "SetTextI18n")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         enableEdgeToEdge()
@@ -31,6 +31,7 @@ class UserPage : AppCompatActivity() {
         val imageView: ImageView = findViewById(R.id.image_view)
         val tasks: LinearLayout = findViewById(R.id.LinLayout)
         val add_task: ImageButton = findViewById(R.id.append_task)
+        var Welcome_text: TextView = findViewById(R.id.Welcome_Text)
         var checkBox: CheckBox
         var textView: TextView
         var linearLayout: LinearLayout
@@ -58,7 +59,9 @@ class UserPage : AppCompatActivity() {
                 handler.postDelayed(this, 1000) // Update every second
             }
         })
-
+ imageView.setOnClickListener{
+     Welcome_text.text = Welcome_text.text.toString() + "User"
+ }
         
         add_task.setOnClickListener {
 
