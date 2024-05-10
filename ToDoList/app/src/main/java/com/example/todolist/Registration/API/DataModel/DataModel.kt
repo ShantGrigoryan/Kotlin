@@ -1,4 +1,4 @@
-package com.example.todolist.DataModel
+package com.example.todolist.Registration.API.DataModel
 
 import com.google.gson.annotations.SerializedName
 

@@ -56,6 +56,7 @@ class UserPage : AppCompatActivity() {
                         }
                     }
                 }
+
                 handler.postDelayed(this, 1000) // Update every second
             }
         })

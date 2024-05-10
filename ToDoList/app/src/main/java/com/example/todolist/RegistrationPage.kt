@@ -11,8 +11,8 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.todolist.DataModel.DataModel
-import com.example.todolist.Register.API.RetrofitClient
+import com.example.todolist.Registration.API.DataModel.DataModel
+import com.example.todolist.Registration.API.Register.RetrofitClient
 
 @Suppress("UNREACHABLE_CODE")
 class RegistrationPage : AppCompatActivity() {

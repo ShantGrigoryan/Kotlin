@@ -40,15 +40,16 @@
                 android:background="@drawable/for_image"
                 android:clickable="true" />
         </FrameLayout>
+
         <TextView
             android:id="@+id/Welcome_Text"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textStyle="bold"
-            android:textColor="@color/black"
-            android:text="Welcome"
             android:layout_gravity="center"
-            android:layout_marginBottom="6dp"/>
+            android:layout_marginBottom="6dp"
+            android:text="Welcome"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
     </LinearLayout>
 
     <LinearLayout
@@ -64,52 +65,56 @@
             android:layout_weight="1"
             android:gravity="center_horizontal">
 
+            <FrameLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                tools:ignore="MissingConstraints">
+
+                <!-- Clock face -->
+                <ImageView
+                    android:id="@+id/clock_face"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center"
+                    android:src="@drawable/clock_face" />
+
+                <!-- Nested FrameLayout to contain clock hands -->
                 <FrameLayout
-                    android:layout_width="match_parent"
-                    android:layout_height="match_parent"
-                    android:gravity="center">
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center">
 
-                    <ImageView
-                        android:id="@+id/clock_face"
-                        android:layout_gravity="center"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:src="@drawable/clock_face" />
-
+                    <!-- Hour hand -->
                     <ImageView
                         android:id="@+id/hour_hand"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/hour_hand"
                         android:layout_gravity="center"
-                        android:layout_marginLeft="13dp"
-                        />
+                        android:src="@drawable/hour_hand" />
 
+                    <!-- Minute hand -->
                     <ImageView
                         android:id="@+id/minute_hand"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/minute_hand"
                         android:layout_gravity="center"
-                        />
+                        android:src="@drawable/minute_hand" />
 
+                    <!-- Second hand -->
                     <ImageView
                         android:id="@+id/second_hand"
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
-                        android:src="@drawable/second_hand"
-                        android:layout_gravity="center" />
-
-                    <SeekBar
-                        android:id="@+id/seekBar"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content" />
+                        android:layout_gravity="center"
+                        android:src="@drawable/second_hand" />
                 </FrameLayout>
+            </FrameLayout>
 
 
 
 
-            <TextView
+    <TextView
                 android:layout_width="wrap_content"
                 android:layout_height="12dp"
                 android:layout_marginRight="33dp"
@@ -145,7 +150,6 @@
 
     <LinearLayout
         android:id="@+id/LinLayout"
-        android:clickable="true"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
@@ -153,6 +157,7 @@
         android:layout_marginTop="9dp"
         android:layout_marginRight="33dp"
         android:background="@drawable/task_rectangle"
+        android:clickable="true"
         android:orientation="vertical">
 
         <LinearLayout
@@ -175,39 +180,39 @@
                 android:id="@+id/append_task"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:clickable="true"
                 android:layout_gravity="end"
                 android:layout_marginTop="7dp"
                 android:layout_marginRight="16dp"
-                android:background="@drawable/append_task" />
+                android:background="@drawable/append_task"
+                android:clickable="true" />
 
         </LinearLayout>
 
-<!--        <LinearLayout-->
-<!--            android:layout_width="match_parent"-->
-<!--            android:layout_height="wrap_content"-->
-<!--            android:layout_marginTop="17dp"-->
-<!--            android:orientation="horizontal"-->
-<!--            android:textAlignment="center">-->
+        <!--        <LinearLayout-->
+        <!--            android:layout_width="match_parent"-->
+        <!--            android:layout_height="wrap_content"-->
+        <!--            android:layout_marginTop="17dp"-->
+        <!--            android:orientation="horizontal"-->
+        <!--            android:textAlignment="center">-->
 
-<!--            <CheckBox-->
-<!--                android:id="@+id/checkbox"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="wrap_content"-->
-<!--                android:checked="false"-->
-<!--                android:contextClickable="false"-->
-<!--                android:textColorHint="#3DDAE4"-->
-<!--                android:textColorLink="#3DDAE4" />-->
+        <!--            <CheckBox-->
+        <!--                android:id="@+id/checkbox"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="wrap_content"-->
+        <!--                android:checked="false"-->
+        <!--                android:contextClickable="false"-->
+        <!--                android:textColorHint="#3DDAE4"-->
+        <!--                android:textColorLink="#3DDAE4" />-->
 
-<!--            <TextView-->
-<!--                android:id="@+id/task"-->
-<!--                android:layout_width="wrap_content"-->
-<!--                android:layout_height="match_parent"-->
-<!--                android:gravity="center"-->
-<!--                android:text="example task"-->
-<!--                android:textColor="@color/black"-->
-<!--                android:textSize="12dp"/>-->
-<!--        </LinearLayout>-->
+        <!--            <TextView-->
+        <!--                android:id="@+id/task"-->
+        <!--                android:layout_width="wrap_content"-->
+        <!--                android:layout_height="match_parent"-->
+        <!--                android:gravity="center"-->
+        <!--                android:text="example task"-->
+        <!--                android:textColor="@color/black"-->
+        <!--                android:textSize="12dp"/>-->
+        <!--        </LinearLayout>-->
     </LinearLayout>
 
 

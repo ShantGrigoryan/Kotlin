@@ -24,7 +24,7 @@ class MainActivity : AppCompatActivity() {
 
         start.setOnClickListener {
 //            val intent = Intent(this, RegistrationPage::class.java)
-            val intent = Intent(this, UserPage::class.java)
+            val intent = Intent(this, RegistrationPage::class.java)
             startActivity(intent)
         }
 
