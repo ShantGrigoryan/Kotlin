@@ -31,6 +31,7 @@ class RegistrationPage : AppCompatActivity() {
         val Email: EditText = findViewById(R.id.Email)
         val Password: EditText = findViewById(R.id.Password)
         val Confirm_password: EditText = findViewById(R.id.Confirm_Password)
+
         register.setOnClickListener {
             val name = Name.text.toString()
             val email = Email.text.toString()

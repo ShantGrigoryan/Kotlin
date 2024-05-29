@@ -19,52 +19,6 @@ class SignInPage : AppCompatActivity() {
         val loginButton: TextView = findViewById(R.id.Login_txt)
         val signUpText: TextView = findViewById(R.id.sign_in_txt)
 
-//        loginButton.setOnClickListener {
-//            val email = emailEditText.text.toString().trim()
-//            val password = passwordEditText.text.toString().trim()
-//
-//            if (email.isNotEmpty() && password.isNotEmpty()) {
-//                val credentials = DataModel(email, email, password)
-//
-//                GlobalScope.launch(Dispatchers.Main) {
-//                    try {
-//                        val response = ApiService.RetrofitClient.service.login(credentials)
-//
-////                        val response =
-//                        if (response.isSuccessful) {
-//                            val token = response.body()?.token
-////                             Save token to shared preferences or perform other actions
-//                            Toast.makeText(
-//                                this@SignInPage,
-//                                "Login successful. Token: $token",
-//                                Toast.LENGTH_SHORT
-//                            ).show()
-//                        } else {
-//                            // Handle login failure
-//                            Toast.makeText(
-//                                this@SignInPage,
-//                                "Login failed. Please check your credentials.",
-//                                Toast.LENGTH_SHORT
-//                            ).show()
-//                        }
-//                    } catch (e: Exception) {
-//                        // Handle network or server errors
-//                        Toast.makeText(
-//                            this@SignInPage,
-//                            "An error occurred. Please try again later.",
-//                            Toast.LENGTH_SHORT
-//                        ).show()
-//                    }
-//                }
-//            } else {
-//                // Show error message if email or password is empty
-//                Toast.makeText(
-//                    this@SignInPage,
-//                    "Please enter both email and password.",
-//                    Toast.LENGTH_SHORT
-//                ).show()
-//            }
-//        }
 
         signUpText.setOnClickListener {
             val intent = Intent(this, RegistrationPage::class.java)

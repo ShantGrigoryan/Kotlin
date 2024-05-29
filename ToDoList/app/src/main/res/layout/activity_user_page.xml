@@ -65,50 +65,18 @@
             android:layout_weight="1"
             android:gravity="center_horizontal">
 
+            <AnalogClock
+                android:layout_width="110dp"
+                android:layout_height="110dp"
+                tools:layout_editor_absoluteX="150dp"
+                tools:layout_editor_absoluteY="1dp" />
+
             <FrameLayout
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:layout_gravity="center"
                 tools:ignore="MissingConstraints">
 
-                <!-- Clock face -->
-                <ImageView
-                    android:id="@+id/clock_face"
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center"
-                    android:src="@drawable/clock_face" />
-
-                <!-- Nested FrameLayout to contain clock hands -->
-                <FrameLayout
-                    android:layout_width="wrap_content"
-                    android:layout_height="wrap_content"
-                    android:layout_gravity="center">
-
-                    <!-- Hour hand -->
-                    <ImageView
-                        android:id="@+id/hour_hand"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:src="@drawable/hour_hand" />
-
-                    <!-- Minute hand -->
-                    <ImageView
-                        android:id="@+id/minute_hand"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:src="@drawable/minute_hand" />
-
-                    <!-- Second hand -->
-                    <ImageView
-                        android:id="@+id/second_hand"
-                        android:layout_width="wrap_content"
-                        android:layout_height="wrap_content"
-                        android:layout_gravity="center"
-                        android:src="@drawable/second_hand" />
-                </FrameLayout>
             </FrameLayout>
 
 
